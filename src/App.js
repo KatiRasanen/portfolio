@@ -1,12 +1,14 @@
 import "./App.css";
+import img from "./profile_pic.jpg";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>Kati Räsänen</p>
-        <p>Software developer</p>
-      </header>
+      <img src={img} className="profilePicture" alt="profile picture" />
+      <p>
+        Kati Räsänen
+        <br /> Software developer
+      </p>
     </div>
   );
 }
