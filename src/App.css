@@ -10,11 +10,11 @@
   text-align: center;
 }
 
-
-
 .profilePicture {
-  width: 300px;
+  width: 320px;
   max-width: 80%;
   height: auto;
+  padding: 10px;
+  outline: 1px solid #dadada;
 }
 
