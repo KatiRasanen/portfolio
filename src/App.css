@@ -18,3 +18,30 @@
   outline: 1px solid #dadada;
 }
 
+.intro {
+  margin: auto;
+
+  max-width: 80%;
+}
+
+.columns {
+  display: flex;
+}
+
+.columnLeft {
+  width: 50%;
+  /* background-color: #dadada; */
+}
+
+.columnRight {
+  width: 50%;
+  /* background-color: pink; */
+}
+
+.education {
+  display: flex;
+}
+
+.education div {
+  margin-left: 10px;
+}

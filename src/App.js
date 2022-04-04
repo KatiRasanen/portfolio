@@ -2,7 +2,7 @@ import "./App.css";
 import img from "./profile_pic.jpg";
 
 function App() {
-  return (
+  return (  
     <div className="App">
       <img src={img} className="profilePicture" alt="profile picture" />
       <p>

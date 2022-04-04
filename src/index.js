@@ -5,6 +5,8 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 import ReactGA from "react-ga";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import Introduction from "./pages/Introduction";
 
 const TRACKING_ID = "UA-74408969-1";
 ReactGA.initialize(TRACKING_ID);
@@ -12,7 +14,12 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}></Route>
+        <Route path="intro" element={<Introduction />}></Route>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );
